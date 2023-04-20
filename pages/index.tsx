@@ -1,7 +1,9 @@
+import Layout from "@/components/layout";
+
 export default function Home() {
   return (
-    <>
-      <div className="bg-red-200">HOME, HELLO WORLD!!!</div>
-    </>
+    <Layout>
+      <div className="bg-red-200">HELLO WORLD</div>
+    </Layout>
   );
 }
