@@ -7,7 +7,14 @@ module.exports = {
   theme: {
 		extend: {
 		  colors: {
-			'my-custom-color': '#fffff'
+        'light-blue': '#E6ECF5',
+        'dark-bue': '#07469C',
+        'blue': '#0099E1',
+        'white': '#FFFFFF',
+        'dark-pink': '#EF3061',
+        'dark-gray': '#333333',
+        'gray': '#757575',
+        'ligth-gray': '#F2F2F2'
 		},
     screens: {
       xs: '375px',
