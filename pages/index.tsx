@@ -5,7 +5,7 @@ import type { NextPageWithLayout } from './_app'
 const Page: NextPageWithLayout = () => {
   return (
     <>
-      Hello world
+      <div className="bg-red-300">Hello world</div>
     </>
   )
 }
