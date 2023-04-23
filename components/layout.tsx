@@ -1,6 +1,11 @@
 import Head from 'next/head'
+
+interface Ilayout {
+  children: React.ReactNode,
+  title?: string
+}
   
-function Layout({ children, title }: any) {
+function Layout({ children, title }: Ilayout) {
     return (
       <>
       <Head>
