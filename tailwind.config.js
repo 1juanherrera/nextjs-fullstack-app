@@ -10,13 +10,14 @@ module.exports = withMT({
 		extend: {
 		  colors: {
         'light-blue': '#E6ECF5',
-        'dark-bue': '#07469C',
+        'dark-blue': '#07469C',
         'blue': '#0099E1',
         'white': '#FFFFFF',
         'dark-pink': '#EF3061',
         'dark-gray': '#333333',
         'gray': '#757575',
-        'ligth-gray': '#F2F2F2'
+        'light-gray': '#F2F2F2',
+        'black': '#000000' 
 		},
     screens: {
       xs: '375px',
