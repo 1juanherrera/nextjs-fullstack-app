@@ -26,6 +26,10 @@ module.exports = withMT({
       lg: '1200px',
       xl: '1536px',
     },
+    fontFamily:{
+      'nunito': ['nunito'],
+      'mulish' : ['mulish'],
+    }
   },
   plugins: [],
   }
