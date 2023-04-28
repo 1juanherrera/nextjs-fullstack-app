@@ -1,7 +1,7 @@
 import Image from "next/image"
 import message from '../assets/message.svg'
 import handle from '../assets/handle.svg'
-import send from '../assets//send.svg'
+import send from '../assets/send.svg'
 
 const HomeFooter = () => {
     return (

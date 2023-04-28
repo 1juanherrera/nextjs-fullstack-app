@@ -11,7 +11,7 @@ export default function Application(){
         <div className="flex-col text-center w-[585px] m-auto pt-[72px]">
           <h2 className="font-['nunito'] font-bold text-[32px] text-dark-blue leading-9">Get your Mexican Residence!</h2>
         </div>
-        <div className="bg-blue w-[28px] h-[7px] mt-[13px] m-auto"></div>
+        <div className="bg-blue w-[28px] h-[7px] mt-3 m-auto"></div>
         <div className="mt-[21px] font-['mulish'] text-center text-[16px] h-[120px] w-[516px] leading-5 font-light m-auto">
         <p>Lifestyle choices vary, which is why we take the time to learn about your individual situation and requirements.</p>
 
