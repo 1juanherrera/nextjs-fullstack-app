@@ -18,6 +18,7 @@ module.exports = withMT({
         'gray': '#757575',
         'light-gray': '#F2F2F2',
         'black': '#000000' 
+
 		},
     screens: {
       xs: '375px',
@@ -31,7 +32,8 @@ module.exports = withMT({
       'mulish' : ['mulish'],
     }
   },
-  plugins: [],
+  plugins: [
+  ],
   }
 });
 
