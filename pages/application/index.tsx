@@ -1,20 +1,14 @@
 import Image from "next/image"
-import mexicanFlag from '../assets/mexicanFLag.svg'
-import mexicanDance from '../assets/mexicanDance.jpg'
-import message from '../assets/message.svg'
-import handle from '../assets/handle.svg'
-import send from '../assets/send.svg'
+import mexicanDance from '../../assets/mexicanDance.jpg'
+import Layout from "@/components/layout"
 
 export default function Application(){
 
 
   return (
-    <div className="bg-light-blue w-full h-full">
-      <div className="flex"> 
-        <h2 className="mt-[38px] ml-[96px] font-['nunito'] text-[30px] font-bold">resimex</h2>
-        <Image src={mexicanFlag} alt="mexican flag" className="mt-[38px] ml-[15px] w-[35px]" />
-      </div>
-        <div className="flex-col text-center w-[585px] m-auto mt-[72px]">
+    <Layout>
+      <div className="bg-light-blue m-0 p-0 w-full h-full">
+        <div className="flex-col text-center w-[585px] m-auto pt-[72px]">
           <h2 className="font-['nunito'] font-bold text-[32px] text-dark-blue leading-9">Get your Mexican Residence!</h2>
         </div>
         <div className="bg-blue w-[28px] h-[7px] mt-[13px] m-auto"></div>
@@ -25,7 +19,7 @@ export default function Application(){
         </div>
         <div className="z-30 relative flex shadow-[0_4px_4px_rgba(0,0,0,0.15)] rounded-[10px] w-[540px] bg-white h-[416px] m-auto">
             <div className="relative font-['nunito'] font-bold text-[32px] text-dark-blue flex-col h-[416px] w-[50px] text-center ml-[34px]">
-              <div className="mt-[46px] w-[49px] flex items-center justify-center h-[49px] rounded-full bg-light-blue m-auto">1</div>
+              <div className="mt-[46px] w-[49px] flex items-center justify-center h-[49px rounded-full bg-light-blue m-auto">1</div>
               <div className="absolute w-[2px] h-[200px] bg-light-blue left-[23px]"></div>
               <div className="relative mt-[59px] w-[49px] flex items-center justify-center h-[49px] rounded-full bg-light-blue m-auto">2</div>
               <div className="relative mt-[81px] w-[49px] flex items-center justify-center h-[49px] rounded-full bg-light-blue m-auto">3</div>
@@ -57,30 +51,11 @@ export default function Application(){
             </div>
         </div>
       </div>
-        <div className="bg-light-blue flex w-full z-1 h-[250px]">
-            <Image src={mexicanDance} alt='mexican dance' className="z-0 absolute bottom-[-320px] w-full"/>
+        <div className="bg-light-blue flex w-full z-1 h-[329px]">
+            <Image src={mexicanDance} alt='mexican dance' className="z-0 bottom-[-390px] absolute w-full"/>
             <button className="active:bg-dark-blue z-10 w-[344px] h-[55.92px] bg-blue m-auto mt-[67px] rounded-[10px] text-[14px] text-white font-['mulish'] font-bold leading-[18px] not-italic">GET STARTED</button>
         </div>
-        <div className="relative flex h-[198px] w-full bg-dark-blue">
-            <div className="flex absolute top-20 left-40">
-              <div className="w-[55px] h-[55px] bg-white rounded-full flex items-center justify-center">
-                <Image src={message} alt='message'/>
-              </div>
-              <div className="w-[218px] h-[55px] flex justify-center items-center">
-                <h3 className="font-['mulish'] text-white text-[16px]">contact.forwork@gmail.com</h3>
-              </div>
-            </div>
-            <div className="absolute right-20 h-[237px] w-[237px] bg-white rounded-full bottom-[80px] flex justify-end items-center">
-              <div className="flex justify-center items-start h-[150px] w-[160px] flex-col">
-                <Image src={handle} alt='handle' className="w-4 h-4"/>
-                <h3 className="font-['mulish'] font-medium text-[30px] leading-9 not-italic text-blue">Say,<br />
-                Hello!</h3>
-              </div>
-              <button className="active:bg-dark-gray absolute w-[57px] h-[57px] bg-blue rounded-full flex items-center justify-center bottom-[20px]">
-                <Image src={send} alt='send' className="w-6 h-6 mt-1"/>
-              </button>
-            </div>
-        </div>
   </div>
+    </Layout>
   )
 }
