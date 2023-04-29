@@ -1,13 +1,20 @@
 import Image from "next/image"
 import mexicanDance from '../../assets/mexicanDance.jpg'
-import Layout from "@/components/layout"
+import message from '../../assets/message.svg'
+import handle from '../../assets/handle.svg'
+import send from '../../assets/send.svg'
+import mexicanFlag from '../../assets/mexicanFLag.svg'
 
 export default function Application(){
 
 
   return (
-    <Layout>
+    <>
       <div className="bg-light-blue m-0 p-0 w-full h-full">
+          <div className="flex mb-0"> 
+            <h2 className="mt-[38px] ml-[96px] font-['nunito'] text-[30px] font-bold">resimex</h2>
+            <Image src={mexicanFlag} alt="mexican flag" className="mt-[38px] ml-[15px] w-[35px]" />
+          </div>
         <div className="flex-col text-center w-[585px] m-auto pt-[72px]">
           <h2 className="font-['nunito'] font-bold text-[32px] text-dark-blue leading-9">Get your Mexican Residence!</h2>
         </div>
@@ -55,7 +62,27 @@ export default function Application(){
             <Image src={mexicanDance} alt='mexican dance' className="z-0 bottom-[-390px] absolute w-full"/>
             <button className="active:bg-dark-blue z-10 w-[344px] h-[55.92px] bg-blue m-auto mt-[67px] rounded-[10px] text-[14px] text-white font-['mulish'] font-bold leading-[18px] not-italic">GET STARTED</button>
         </div>
+        <div className="relative mb-0 flex h-[198px] w-full bg-dark-blue">
+            <div className="hidden md:flex absolute top-20 left-40">
+              <div className="w-[55px] h-[55px] bg-white rounded-full flex items-center justify-center">
+                <Image src={message} alt='message'/>
+              </div>
+              <div className="w-[218px] h-[55px] flex justify-center items-center">
+                <h3 className="font-['mulish'] text-white text-[16px]">contact.forwork@gmail.com</h3>
+              </div>
+            </div>
+            <div className="absolute right-20 h-[237px] w-[237px] bg-white rounded-full bottom-[80px] hidden md:flex justify-end items-center">
+              <div className="flex justify-center items-start h-[150px] w-[160px] flex-col">
+                <Image src={handle} alt='handle' className="w-4 h-4"/>
+                <h3 className="font-['mulish'] font-medium text-[30px] leading-9 not-italic text-blue">Say,<br />
+                Hello!</h3>
+              </div>
+              <button className="active:bg-dark-gray absolute w-[57px] h-[57px] bg-blue rounded-full flex items-center justify-center bottom-[20px]">
+                <Image src={send} alt='send' className="w-6 h-6 mt-1"/>
+              </button>
+            </div>
+        </div>
   </div>
-    </Layout>
+    </>
   )
 }
