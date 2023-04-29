@@ -17,8 +17,8 @@ module.exports = withMT({
         'dark-gray': '#333333',
         'gray': '#757575',
         'light-gray': '#F2F2F2',
-        'black': '#000000' 
-
+        'black': '#000000', 
+        'lights-gray': '#E2E2E2'
 		},
     screens: {
       xs: '375px',
