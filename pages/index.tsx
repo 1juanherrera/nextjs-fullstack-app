@@ -102,7 +102,7 @@ const Page: NextPageWithLayout = () => {
         </div>
       </div>
       <div className='bg-light-gray flex justify-center items-center flex-col pb-[40px]'>
-          <div>
+          <div className='mb-[13px]'>
             <h1 className='font-["nunito"] pt-[100px] font-bold text-[32px] text-dark-blue'>Why Choose Us</h1>
           </div>
           <div className='w-[28px] h-[7px] mt-[13px] mb-[46px] bg-blue'></div>
