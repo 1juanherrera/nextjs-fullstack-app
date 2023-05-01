@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HomeHeader from './homeHeader';
 
 interface Ilayout {
   children: React.ReactNode,
@@ -12,7 +13,8 @@ function Layout({ children, title }: Ilayout) {
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-        <main>
+        <main>     
+          <HomeHeader/>   
           {children}
         </main>
       </>
