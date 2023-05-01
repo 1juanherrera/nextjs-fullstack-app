@@ -78,7 +78,7 @@ export default function Login(){
     </div>
           </div>
           <section className='flex justify-start  mb-10'>
-          <Link href="/auth/sign-up" className='text-[#0099E1] underline ml-1.5 text-xs'>Forgot you password?</Link>
+          <Link href="/auth/recover-password" className='text-[#0099E1] underline ml-1.5 text-xs'>Forgot you password?</Link>
           </section>
           <Button className="bg-cyan-600 font-mulish font-bold w-full text-sm leading-5 text-white " >
             LOG IN

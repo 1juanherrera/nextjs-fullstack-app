@@ -7,7 +7,8 @@ import Profile4 from '../assets/image 6.png'
 import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -26,7 +27,7 @@ import {
 } from "@material-tailwind/react";
 import Link from 'next/link'
 import { HiEye, HiEyeOff } from "react-icons/hi";
-
+import { Checkbox } from "@material-tailwind/react";
 export default function SignUp(){
   const [showPassword, setShowPassword] = useState(false);
 
@@ -54,11 +55,11 @@ export default function SignUp(){
           <div className="mb-4 flex flex-col gap-6">
             <div className='grid grid-col-2'>
               <h2 className='font-mulish font-semibold text-xs text-dark-gray flex'>Your email<p className='text-dark-pink'>*</p></h2>
-              <Input type='email' label="Please enter your email" className='font-mulish font-normal text-xs leading-5 text-gray bg-light-gray border-none rounded'/>
+              <Input type='email' label="Please enter your email" className='font-mulish font-normal text-xs leading-5 text-gray bg-[#F2F2F2] border-none rounded' icon={<FontAwesomeIcon className='text-[#11AF22]'  icon={faCheck} />}/>
             </div>
             <div className='grid grid-col-2'>
               <h2 className='font-mulish font-semibold text-xs text-dark-gray flex'>Create username<p className='text-dark-pink'>*</p></h2>
-              <Input size="lg" label="Enter your username" className='font-mulish font-normal text-xs leading-5 text-gray bg-light-gray border-none rounded'/>
+              <Input size="lg" label="Enter your username" className='font-mulish font-normal text-xs leading-5 text-gray bg-[#F2F2F2] border-none rounded' icon={<FontAwesomeIcon  className='text-[#11AF22]' icon={faCheck} />}/>
             </div>
            <div className="relative">
       <div className="grid grid-col-2">
@@ -69,7 +70,7 @@ export default function SignUp(){
           type={showPassword ? "text" : "password"}
           size="lg"
           label="Enter password"
-          className="font-mulish font-normal text-xs leading-5 text-gray bg-light-gray border-none rounded pl-10"
+          className="font-mulish font-normal text-xs leading-5 text-gray bg-[#F2F2F2] border-none rounded pl-10"
         />
       </div>
       <button
@@ -82,7 +83,8 @@ export default function SignUp(){
     </div>
           </div>
           <section className='flex justify-center  mb-10'>
-            <h3 className='font-mulish font-normal text-xs leading-4 text-gray w-80 '>
+            <Checkbox color="green" className='rounded-sm w-3.5 h-3.5 border-2 border-solid border-[#11AF22]' defaultChecked />
+            <h3 className='font-mulish font-normal mt-3 text-xs leading-4 text-gray w-80 '>
               By creating an account you are agreeing to our Terms and Conditions and Privily Policy
             </h3>
           </section>
