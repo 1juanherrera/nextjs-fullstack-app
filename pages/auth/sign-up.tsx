@@ -4,7 +4,7 @@ import Profile1 from '../assets/image 1.png'
 import Profile2 from '../assets/image 2.png'
 import Profile3 from '../assets/image 4.png'
 import Profile4 from '../assets/image 6.png'
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

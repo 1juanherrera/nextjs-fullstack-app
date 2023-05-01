@@ -4,7 +4,7 @@ import Profile1 from '../assets/image 1.png'
 import Profile2 from '../assets/image 2.png'
 import Profile3 from '../assets/image 4.png'
 import Profile4 from '../assets/image 6.png'
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -52,10 +52,6 @@ export default function Login(){
         </Typography>
         <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
           <div className="mb-4 flex flex-col gap-6">
-            {/* <div className='grid grid-col-2'>
-              <h2 className='font-mulish font-semibold text-xs text-dark-gray flex'>Your email<p className='text-dark-pink'>*</p></h2>
-              <Input type='email' label="Please enter your email" className='font-mulish font-normal text-xs leading-5 text-gray bg-light-gray border-none rounded'/>
-            </div> */}
             <div className='grid grid-col-2'>
               <h2 className='font-mulish font-semibold text-xs text-dark-gray flex'>Enter your username<p className='text-dark-pink'>*</p></h2>
               <Input size="lg" label="Enter your username" className='font-mulish font-normal text-xs leading-5 text-gray bg-light-gray border-none rounded'/>
