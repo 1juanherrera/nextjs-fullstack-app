@@ -30,6 +30,9 @@ module.exports = withMT({
     fontFamily:{
       'nunito': ['nunito'],
       'mulish' : ['mulish'],
+    },
+    spacing: {
+      '-20': '-20px'
     }
   },
   plugins: [
