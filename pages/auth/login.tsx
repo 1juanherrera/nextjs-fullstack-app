@@ -5,6 +5,8 @@ import Profile2 from '../assets/image 2.png'
 import Profile3 from '../assets/image 4.png'
 import Profile4 from '../assets/image 6.png'
 import React, {  useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -53,8 +55,8 @@ export default function Login(){
         <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
           <div className="mb-4 flex flex-col gap-6">
             <div className='grid grid-col-2'>
-              <h2 className='font-mulish font-semibold text-xs text-dark-gray flex'>Enter your username<p className='text-dark-pink'>*</p></h2>
-              <Input size="lg" label="Enter your username" className='font-mulish font-normal text-xs leading-5 text-gray bg-light-gray border-none rounded'/>
+              <h2 className='font-mulish font-semibold text-xs text-dark-gray flex' >Enter your username<p className='text-dark-pink'>*</p></h2>
+              <Input size="lg" label="Enter your username" className='font-mulish font-normal text-xs leading-5 text-gray bg-light-gray border-none rounded ' icon={<FontAwesomeIcon  className='text-[#11AF22]' icon={faCheck} />}/>
             </div>
            <div className="relative">
       <div className="grid grid-col-2">
@@ -101,7 +103,7 @@ export default function Login(){
         }}
         navigation={false}
         modules={[Autoplay, Pagination]}
-        className=" w-[450px] !mr-[0px] h-vh"
+        className="customSwiper w-[450px] !mr-[0px] h-vh"
       >
         <SwiperSlide  >
           <Image src={Profile1} alt='profile 1' className='w-full h-full'

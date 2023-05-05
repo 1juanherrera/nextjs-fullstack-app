@@ -35,7 +35,7 @@ export default function SignUp(){
     setShowPassword(!showPassword);
   };
   
-  return <div className='flex flex-row justify-between '>
+  return <div className='flex flex-row justify-between'>
     <div className='absolute w-40 h-10 left-24 top-9 flex justify-center items-center gap-2.5' >
       <h2 className='font-nunito font-bold text-3xl' >
         resimex
@@ -43,7 +43,7 @@ export default function SignUp(){
       <Image src={mexicanFlag} alt= 'Mexican flag'/>
     </div>
     {/* form */}
-    <div className='relative flex left-60 items-center mt-28 h-screen mr-20'>
+    <div className='relative flex left-60 items-center mt-28 h-screen mr-20 '>
       <Card color="transparent" shadow={false}>
         <Typography variant="h4" className="text-dark-blue font-nunito w-40 text-sm leading-7">
           Create an account
@@ -109,7 +109,7 @@ export default function SignUp(){
         }}
         navigation={false}
         modules={[Autoplay, Pagination]}
-        className=" w-[450px] !mr-[0px] h-vh"
+        className="customSwiper w-[450px] !mr-[0px] h-vh"
       >
         <SwiperSlide  >
           <Image src={Profile1} alt='profile 1' className='w-full h-full'
