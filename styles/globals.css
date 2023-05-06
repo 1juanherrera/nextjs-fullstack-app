@@ -12,7 +12,7 @@
 
 .customSwiper .swiper-pagination-bullet{
   background: white  !important;
-  
+
 
 }
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
@@ -21,4 +21,12 @@
   bottom: 50px !important;
   display: flex !important;
   margin: 0px 55px !important;
+}
+
+.background-container {
+    background-image: url('../assets/mexicanDance.jpg') !important;
+}
+
+.background-container-responsive {
+    background-image: url('../assets/mexicanDanceResponsive.jpg') !important;
 }
