@@ -72,7 +72,6 @@ export default function Application(){
                 <h3 className="font-['mulish'] text-white text-base">contact.forwork@gmail.com</h3>
               </div>
             </div>
-            
         <div className="flex md:hidden justify-between items-center w-full">
         <div className="mb-0 ml-10 flex justify-start items-center h-48 w-full bg-dark-blue">
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
@@ -80,21 +79,20 @@ export default function Application(){
               </div>
             </div>
           <div className="mr-7 w-80 text-white font-['nunito']">
-              <ul>
+              <ul className="underline">
                   <li>Terms and condition</li>
                   <li>Privacy polity</li>
                   <li>all right reserved</li>
               </ul> 
           </div>
         </div>
-
-            <div className="absolute right-20 h-[237px] w-[237px] bg-white rounded-full bottom-[80px] hidden md:flex justify-end items-center">
-              <div className="flex justify-center items-start h-[150px] w-[160px] flex-col">
+            <div className="absolute right-20 h-60 w-60 bg-white rounded-full bottom-20 hidden md:flex justify-end items-center">
+              <div className="flex justify-center items-start h-40 w-40 flex-col">
                 <Image src={handle} alt='handle' className="w-4 h-4"/>
-                <h3 className="font-['mulish'] font-medium text-[30px] leading-9 not-italic text-blue">Say,<br />
+                <h3 className="font-['mulish'] font-medium text-3xl leading-9 not-italic text-blue">Say,<br />
                 Hello!</h3>
               </div>
-              <button className="active:bg-dark-gray absolute w-[57px] h-[57px] bg-blue rounded-full flex items-center justify-center bottom-[20px]">
+              <button className="active:bg-dark-gray absolute w-14 h-14 bg-blue rounded-full flex items-center justify-center bottom-5">
                 <Image src={send} alt='send' className="w-6 h-6 mt-1"/>
               </button>
             </div>
