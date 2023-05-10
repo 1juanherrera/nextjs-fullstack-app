@@ -24,9 +24,9 @@
 }
 
 .background-container {
-    background-image: url('../assets/mexicanDance.jpg') !important;
+    background-image: url('/assets/mexicanDance.jpg') !important;
 }
 
 .background-container-responsive {
-    background-image: url('../assets/mexicanDanceResponsive.jpg') !important;
+    background-image: url('/assets/mexicanDanceResponsive.jpg') !important;
 }
