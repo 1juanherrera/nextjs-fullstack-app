@@ -1,8 +1,8 @@
 import Image from "next/image"
-import message from '../../assets/message.svg'
-import handle from '../../assets/handle.svg'
-import send from '../../assets/send.svg'
-import mexicanFlag from '../../assets/mexicanFLag.svg'
+import message from '../../public/assets/message.svg'
+import handle from '../../public//assets/handle.svg'
+import send from '../../public/assets/send.svg'
+import mexicanFlag from '../../public/assets/mexicanFLag.svg'
 
 export default function Application(){
 
