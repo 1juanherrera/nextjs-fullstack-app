@@ -35,7 +35,7 @@ export default function Application(){
               <div className="h-8 font-bold text-xl not-italic leading-8 font-['nunito']">
                 <h3>Your personal information</h3>
               </div>
-              <div className="sm:w-[388px] mt-1 sm:mt-3.5 h-[40px] font-light text-base leading-5 font-['mulish'] not-italic">
+              <div className="sm:w-[388px] mr-1 mt-1 sm:mt-3.5 h-[40px] font-light text-base leading-5 font-['mulish'] not-italic">
                 <p>Your basic personal information help us to offert the better option to your case</p>
               </div>
             </div>
@@ -43,7 +43,7 @@ export default function Application(){
                 <div className="h-7 font-bold font-['nunito'] text-xl not-italic leading-[30px]">
                   <h3>Up documentation</h3>
                 </div>
-                <div className="sm:w-[388px] h-10 mt-1 sm:mt-3.5 font-['mulish'] text-base leading-5 not-italic font-light">
+                <div className="sm:w-[388px] mr-1 h-10 mt-1 sm:mt-3.5 font-['mulish'] text-base leading-5 not-italic font-light">
                   <p>Your basic personal information help us to offert the better option to your case</p>
                 </div>
             </div>
@@ -51,7 +51,7 @@ export default function Application(){
               <div className="font-bold not-italic text-xl font-['nunito'] leading-7">
                 <h3>Date with our lawyers</h3>
               </div>
-              <div className="sm:w-[388px] h-10 mt-1 sm:mt-3.5 leading-5 font-['mulish'] font-light">
+              <div className="sm:w-[388px] mr-1 h-10 mt-1 sm:mt-3.5 leading-5 font-['mulish'] font-light">
                 <p>Your basic personal information help us to offert the better option to your case</p>
               </div>
             </div>
